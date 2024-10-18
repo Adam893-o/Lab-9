@@ -1,14 +1,13 @@
 function init(){
-//add your javascrip between these two lines of code
-function displayWords() {
-    // Get the value from the input field
-    let input = document.getElementById('userInput').value;
+  var button = document.getElementById('entrybutton');
 
-    // Display the input in the output div
-    document.getElementById('output').innerHTML = input;
-}
+  function showMeText(){
+    var textbox = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = textbox.value;
+    alert("Adam Sharifeh: " + textbox.value);
+  }
 
-
-
-
+  button.addEventListener('click', showMeText);
+  }
+  
 window.addEventListener('load', init);
